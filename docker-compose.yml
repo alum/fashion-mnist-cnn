@@ -1,0 +1,8 @@
+fashionmnist:
+  image: jupyter/tensorflow-notebook
+  ports:
+    - "8888:8888"
+  volumes:
+    - .:/work
+  working_dir: /work
+  command: start.sh jupyter lab
